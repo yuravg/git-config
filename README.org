@@ -1,0 +1,7 @@
+* git-config
+Git "global" configuration file
+
+* Links
+https://github.com/fniessen/git-leuven.git - Git configuration, aliases and extra commands
+
+https://github.com/seagle0128/dotfiles - gitconfig file example and much more
