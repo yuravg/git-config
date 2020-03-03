@@ -15,6 +15,7 @@
 #    Tag
 #    Help
 #  Coding
+#  Color
 
 # * Profile
 [user]
@@ -111,3 +112,11 @@
 [i18n]
 	filesencoding = utf-8
 	logoutputencoding = utf-8
+
+# * Color
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
