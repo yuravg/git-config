@@ -16,6 +16,7 @@
 #    Submodules
 #      Info
 #      Management
+#    Files, tree
 #    Help
 #    Optimize
 #  Coding
@@ -122,6 +123,15 @@
 	sm-update = submodule update --recursive
 	sm-update-force = submodule update --recursive --force
 	sm-update-remote = submodule update --recursive --remote --merge
+
+# ** Files, tree
+[alias]
+	ls-files = ls-files # 'ls-files' - does not exist in the git-completion.bash
+	lsf = ls-files
+	ls-tree = ls-tree   # 'ls-files' - does not exist in the git-completion.bash
+	lst = ls-tree --abbrev=7 -r
+	# TIPS:
+	# usage example for 'git lst': git lst -r <branch> | grep <search_patert>
 
 # ** Help
 [help]
