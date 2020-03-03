@@ -158,3 +158,6 @@
 	interactive = auto
 	status = auto
 	ui = auto
+
+[color "decorate"]
+    tag = magenta
