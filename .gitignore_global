@@ -1,0 +1,294 @@
+#
+# Git global ignore list
+#
+
+# Contents:
+#
+#  Common
+#    Archives
+#    Bookmarks
+#  Python
+#  Intel/Altera/Quartus:
+#  Mentor
+#  Cadence
+#  Temp directories
+#  C, C++ (CPP):
+#  Flycheck
+#  Java
+#  Linux kernel modules
+#  Nim
+#  LaTeX
+#  Texinfo
+#  Other
+
+# * Common
+*.*~*
+*.a
+*.al
+*.la
+*.lo
+*.o
+*.rej
+*.so
+*.so.[0-9]*
+*.txt
+*.txt,*
+*~
+.#*
+.*.swp
+.DS_Store
+.libs
+.svn
+\#*
+\#*\#
+~*
+
+# ** Archives
+*.7z
+*.gz
+*.rar
+*.tar
+*.tbz
+*.tbz2
+*.tgz
+*.tgz2
+*.xz
+*.zip
+
+# ** Bookmarks
+GPATH
+GRTAGS
+GTAGS
+TAGS
+
+# * Python
+*.egg-info/
+*.pyc
+*.pyo
+dist/
+
+# * Intel/Altera/Quartus:
+# *.BOM
+# *.hex
+# *.mif
+*.*BAK.ip
+*.*BAK.qsys
+*.bak
+*.cnf
+*.dbk
+*.done
+*.drc
+*.elf
+*.eqn
+*.fit
+*.hif
+*.ibs
+*.jdi
+*.lst
+*.mmf
+*.ndb
+*.opj
+*.opt
+*.orig
+*.out.sdc
+*.pin
+*.pin,*
+*.pof
+*.qdf
+*.qmsg
+*.qws
+*.rbf
+*.rpt
+*.rpt,*
+*.rpt.org
+*.sdo
+*.sft
+*.sld
+*.smsg
+*.snf
+*.sof
+*.sopc_builder
+*.sopcinfo
+*.stp
+*.summary
+*.svo
+*.tmp
+*.ttf
+*.vo
+*.wlf
+*.xml
+*.xrf
+*/output_files/
+*_boot_rom.flash
+*_description.txt
+*_log.txt
+.qsys_edit
+altera_lib
+db/
+greybox_tmp
+incremental_db/
+new_rtl_netlist
+old_rtl_netlist
+qdb/
+tcl_stacktrace.txt
+tmp-clearbox/
+
+# * Mentor
+*.cpt
+*.ucdb
+*.ver
+bookmarks.do
+modelsim.ini
+questa.tops
+sim.cr.mti
+transcript
+vsim.dbg*
+vsim.wlf
+wave.do
+work/
+work_*/
+
+# * Cadence
+*,[0-9]
+*.geo
+*.geo,*
+*.mru
+*.DRC
+*.csv
+*.dbg
+
+# * Temp directories
+*temp
+*temp-*/
+*temp/
+*temp_*/
+*tmp
+*tmp-*/
+*tmp/
+*tmp_*/
+
+# * C, C++ (CPP):
+a.out
+# GCC precompiled header
+*.h.gch
+
+# * Flycheck
+flycheck_*
+
+# * Java
+*.class
+
+# * Linux kernel modules
+*.mod.c
+*.ko
+*.ko.cmd
+*.o.cmd
+*.symvers
+*.order
+
+# * Nim
+nimcache/
+
+# * LaTeX
+*.aux
+*.dvi
+*.idx
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+
+# * Texinfo
+*.texi
+
+# * Other
+*.DBK
+*.DSNlck
+*.INF
+*.MNL
+*.NET
+*.ONL
+*.asv
+*.autosave
+*.bld
+*.bmp
+*.bsf
+*.cache
+*.chk
+*.cmd_log
+*.cmp
+*.cr.mti
+*.cxt
+*.dat*
+*.ddb
+*.did
+*.dll
+*.dml*
+*.dmp
+*.dpf
+*.elc
+*.err
+*.exe
+*.gyd
+*.html
+*.iml*
+*.inc*
+*.inf
+*.jed
+*.jic
+*.jpg
+*.jrl*
+*.kate-swp
+*.log*
+*.lso
+*.map
+*.mfd
+*.mnl
+*.net
+*.nga
+*.ngc
+*.ngd
+*.ngr
+*.onl
+*.pad
+*.pnx
+*.ppf
+*.qarlog
+*.qxp
+*.run
+*.spd
+*.stackdump
+*.stx
+*.syr
+*.tag
+*.tim
+*.top
+*.tspec
+*.vm?
+*.vstf
+*.xrpt
+*.xst
+*_INFO.txt
+*_dump.txt
+*_xdb
+_ngo
+_xmsgs
+cio_dump_disallowed_lists.echo
+codegen
+codegen_info.mat
+debug*
+fiaccel
+fixpt
+hc_output
+iseconfig
+libs
+mex
+model_grt_rtw
+reconfig_mif
+signoise.run
+slprj
+top_html
+undo_redo.txt
+wlft*
+xst
