@@ -1,0 +1,41 @@
+
+# Contents:
+#
+#  Profile
+#  Core
+#  Alias
+#    Status
+#    Commit
+#    Branch
+
+# * Profile
+[user]
+	name = Yuriy VG
+	email = yuravg@gmail.com
+
+[github]
+	user = yuravg
+
+# * Core
+[core]
+	editor = vim
+	autocrlf = input
+
+# * Alias
+# ** Status
+[alias]
+	st = status
+	ss = status -s
+	sb = status -s --branch
+	si = status -s --ignored
+
+# ** Commit
+[alias]
+	c = commit
+	cm = commit -m
+	ci = commit -m
+
+# ** Branch
+[alias]
+	br = branch
+	bra = branch --all
