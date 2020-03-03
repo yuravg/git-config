@@ -3,6 +3,7 @@
 #
 #  Profile
 #  Core
+#  Include
 #  Commit
 #  Alias
 #    Status
@@ -34,6 +35,10 @@
 [core]
 	editor = vim
 	autocrlf = input
+
+# * Include
+[include]
+	path = ~/.gitconfig_extra
 
 # * Commit
 [commit]
