@@ -8,6 +8,7 @@
 #    Commit
 #    Checkout
 #    Branch
+#    Reset(undo work/stage/cache)
 
 # * Profile
 [user]
@@ -46,3 +47,9 @@
 [alias]
 	br = branch
 	bra = branch --all
+
+# ** Reset(undo work/stage/cache)
+[alias]
+	uw = checkout --
+	us = reset HEAD
+	uc = rm --cached
