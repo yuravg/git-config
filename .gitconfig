@@ -9,6 +9,7 @@
 #    Checkout
 #    Branch
 #    Reset(undo work/stage/cache)
+#    Diff, difftool
 
 # * Profile
 [user]
@@ -53,3 +54,22 @@
 	uw = checkout --
 	us = reset HEAD
 	uc = rm --cached
+
+# ** Diff, difftool
+[alias]
+	dw = diff --color-words
+	dw0 = diff --color-words -U0
+	ds = diff --staged --color-words
+	ds0 = diff --staged --color-words -U0
+	dh = diff HEAD --color-words
+	w = difftool
+	s = difftool --staged
+	h = difftool HEAD
+	wp = difftool --tool=p4merge
+	sp = difftool --staged --tool=p4merge
+	hp = difftool HEAD --tool=p4merge
+	wm = difftool --tool=meld
+	sm = difftool --staged --tool=meld
+	hm = difftool HEAD --tool=meld
+	mt = mergetool
+	diffall = "!git difftool --dir-diff"
