@@ -14,6 +14,7 @@
 #    Log
 #    Tag
 #    Help
+#  Coding
 
 # * Profile
 [user]
@@ -105,3 +106,8 @@
 # ** Help
 [help]
 	format = web
+
+# * Coding
+[i18n]
+	filesencoding = utf-8
+	logoutputencoding = utf-8
