@@ -20,6 +20,7 @@
 #    Files, tree
 #    Help
 #    Optimize
+#    Mix
 #  Coding
 #  Color
 
@@ -145,6 +146,14 @@
 # ** Optimize
 [alias]
 	optimize = !"git reflog expire --all --expire=now; git gc --prune=now --aggressive"
+
+# ** Mix
+[alias]
+	alias = "!git config -l | grep alias | cut -c 7-"
+	config-list-local = config --local --list
+	config-list-global = "!git config -l | grep -v alias"
+	config-list-global-all = config --global --list
+	zip = archive --format=zip -o git-backup-current-dir.zip HEAD
 
 # * Coding
 [i18n]
