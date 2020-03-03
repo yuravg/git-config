@@ -14,6 +14,7 @@
 #    Log
 #    Tag
 #    Help
+#    Optimize
 #  Coding
 #  Color
 
@@ -107,6 +108,10 @@
 # ** Help
 [help]
 	format = web
+
+# ** Optimize
+[alias]
+	optimize = !"git reflog expire --all --expire=now; git gc --prune=now --aggressive"
 
 # * Coding
 [i18n]
