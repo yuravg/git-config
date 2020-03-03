@@ -6,6 +6,7 @@
 #  Alias
 #    Status
 #    Commit
+#    Checkout
 #    Branch
 
 # * Profile
@@ -34,6 +35,12 @@
 	c = commit
 	cm = commit -m
 	ci = commit -m
+
+# ** Checkout
+[alias]
+	co = checkout
+	cb = checkout -b
+	ct = checkout --track
 
 # ** Branch
 [alias]
