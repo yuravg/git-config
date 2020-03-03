@@ -13,6 +13,7 @@
 #    Diff, difftool
 #    Log
 #    Tag
+#    Help
 
 # * Profile
 [user]
@@ -100,3 +101,7 @@
 [alias]
 	tl = tag -n10
 	tlv = tag -n10 --sort version:refname
+
+# ** Help
+[help]
+	format = web
