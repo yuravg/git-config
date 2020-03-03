@@ -5,6 +5,7 @@
 #  Core
 #  Include
 #  Commit
+#  Push
 #  Alias
 #    Status
 #    Commit
@@ -44,6 +45,11 @@
 # * Commit
 [commit]
 	template = ~/.gitmessage
+
+# * Push
+# Push only the current working branch
+[push]
+	default = simple
 
 # * Alias
 # ** Status
