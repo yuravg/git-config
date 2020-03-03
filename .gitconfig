@@ -3,6 +3,7 @@
 #
 #  Profile
 #  Core
+#  Commit
 #  Alias
 #    Status
 #    Commit
@@ -25,6 +26,10 @@
 [core]
 	editor = vim
 	autocrlf = input
+
+# * Commit
+[commit]
+	template = ~/.gitmessage
 
 # * Alias
 # ** Status
