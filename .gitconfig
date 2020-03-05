@@ -238,6 +238,11 @@
 [alias]
 	# 'fr' - Fetch Rebase('Pull Rebase' name is used in 'git-extars' tools: see at 'git-pr')
 	fr = pull --rebase
+	# TODO: make these aliases smarter(auto detect current branch, remote; move to git-extras?)
+	fr-master = pull --rebase github master
+	fr-develop = pull --rebase github develop
+	fr-some = "!f() { git pull --rebase github develop || git pull --rebase github master; }; f"
+	fr-bitb = pull --rebase bitb master
 
 # ** Submodules
 # *** Info
