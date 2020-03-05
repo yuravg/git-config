@@ -19,6 +19,7 @@
 #    Submodules
 #      Info
 #      Management
+#    Search
 #    Files, tree
 #    Help
 #    Mix
@@ -177,6 +178,21 @@
 	sm-update = submodule update --recursive
 	sm-update-force = submodule update --recursive --force
 	sm-update-remote = submodule update --recursive --remote --merge
+
+# ** Search
+[alias]
+	# (lf - Look For)
+	lf-log = "log --decorate --date=short --grep"
+	lf-patch = "log --decorate --date=short -G"
+	lf-occur-bin = "log --decorate --date=short -S"
+	lf-verbose = "log --decorate --date=short --patch-with-stat -G"
+	# TIPS:
+	# - use search aliases with keys: -i; --all; --patch(-p)/--stat/--patch-with-stat
+	# - search in subject: git log --oneline | grep <pattern>
+	# - search in the results: git <alias> <pattern> <pattern_file> | more
+	# - search in the results: git <alias> <pattern> <pattern_file> | grep <pattern>
+	# - to search file: git ls-files | grep <pattern>
+	# TODO: add alias for 'grep'(the firt arg for git log, second for grep)
 
 # ** Files, tree
 [alias]
