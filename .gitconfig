@@ -24,6 +24,7 @@
 #  Coding
 #  Color
 #  Tools
+#  Git-plus
 
 # * Profile
 [user]
@@ -185,3 +186,8 @@
 
 [diff "exif"]
 	textconv = exiftool
+
+# * Git-plus
+# https://github.com/tkrajina/git-plus
+[multi]
+	groupbyoutput = 1
