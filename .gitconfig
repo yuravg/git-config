@@ -24,6 +24,7 @@
 #    Mix
 #  Coding
 #  Color
+#  Tools
 
 # * Profile
 [user]
@@ -176,3 +177,15 @@
 
 [color "decorate"]
     tag = magenta
+
+# * Tools
+[merge]
+	tool = kdiff3
+
+[diff]
+	tool = kdiff3
+	guitool = kdiff3
+	submodule = log
+
+[diff "exif"]
+	textconv = exiftool
