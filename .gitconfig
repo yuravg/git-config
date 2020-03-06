@@ -43,6 +43,7 @@
 # * Include
 [include]
 	path = ~/.gitconfig_extra
+	path = ~/.gitconfig_path
 
 # * Commit
 [commit]

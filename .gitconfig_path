@@ -1,0 +1,21 @@
+# -*- mode: gitconfig -*-
+
+# Settings for separate path
+#
+# Example:
+#
+# For Windows:
+# [includeIf "gitdir:C:/projects/"]
+# 	path = .gitconfig_CONFIG4WINOWS_NAME
+#
+# For Linux:
+# [includeIf "gitdir:/home/USERNAME/projects/"]
+# 	path = .gitconfig_CONFIG4LINUX_NAME
+#
+# Example of '~/.gitconfig_CONFIG4WINOWS_NAME':
+# [user]
+# 	name = USER_NAME
+# 	email = email
+#
+# [credential "http://LINK"]
+# 	username = USER_NAME
