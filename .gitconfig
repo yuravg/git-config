@@ -151,7 +151,7 @@
 
 # ** Mix
 [alias]
-	remove-reflogs = !"git reflog expire --all --expire=now; git gc --prune=now --aggressive"
+	# remove-reflogs = !"git reflog expire --all --expire=now; git gc --prune=now --aggressive"
 	alias = "!git config -l | grep alias | cut -c 7-"
 	config-list-local = config --local --list
 	config-list-global = "!git config -l | grep -v alias"
