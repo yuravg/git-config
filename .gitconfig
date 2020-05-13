@@ -72,7 +72,8 @@
 [alias]
 	co = checkout
 	cb = checkout -b
-	ct = checkout --track
+    # checkout with create new branch and show current branch status to check the result
+	ct = "!git checkout --track $1 && git status -s --branch"
 
 # ** Branch
 [alias]
