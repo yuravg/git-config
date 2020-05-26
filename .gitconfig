@@ -123,7 +123,8 @@
 # ** Tag
 [alias]
 	tl = tag -n10
-	tlv = tag -n10 --sort version:refname
+	tl-version = tag -n10 --sort version:refname
+	tl-date = tag --sort=-creatordate
 
 # ** Submodules
 # *** Info
