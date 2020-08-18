@@ -115,6 +115,8 @@
 	ls = log --stat --date=format:'%Y-%m-%d %a %H:%M'
 	lon = log --oneline --decorate --graph --name-status
 	lan = log --oneline --decorate --graph --name-status --all
+	lt = log --decorate --graph --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset'
+	lta = lt --all
 	sh = show --color-words --date=format:'%Y-%m-%d %a %H:%M'
 	shw = show --word-diff --date=format:'%Y-%m-%d %a %H:%M'
 	visual = !gitk&
