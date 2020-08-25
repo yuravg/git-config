@@ -26,6 +26,7 @@
 #  Tools
 #  Credential
 #  Git-plus
+#  Git-extras
 
 # * Profile
 [user]
@@ -204,3 +205,8 @@
 # https://github.com/tkrajina/git-plus
 [multi]
 	groupbyoutput = 1
+
+# * Git-extras
+[git-extras "info"]
+	config-grep = git config --list | grep --color=never -E \"^user.name|^user.email\"
+	log = git log --max-count=1 --format=\"Author: %an%nDate:   %ad (%ar)%n%n    %s\" --date=format:\"%Y-%m-%d %a %H:%M\"
