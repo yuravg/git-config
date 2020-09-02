@@ -108,14 +108,16 @@
 
 # ** Log
 [alias]
-	last = log -1 HEAD --name-status --date=format:'%Y-%m-%d %a %H:%M'
+	last = log -1 HEAD --stat --date=format:'%Y-%m-%d %a %H:%M'
 	last-patch = log -1 HEAD --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	lo = log --oneline --decorate --graph
 	la = log --oneline --decorate --graph --all
 	lp = log --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	ls = log --stat --date=format:'%Y-%m-%d %a %H:%M'
 	lon = log --oneline --decorate --graph --name-status
+	los = log --oneline --decorate --graph --stat
 	lan = log --oneline --decorate --graph --name-status --all
+	las = log --oneline --decorate --graph --stat --all
 	lt = log --decorate --graph --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset'
 	lta = lt --all
 	sh = show --color-words --date=format:'%Y-%m-%d %a %H:%M'
