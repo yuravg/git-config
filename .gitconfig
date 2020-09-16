@@ -15,6 +15,7 @@
 #    Diff, difftool
 #    Log
 #    Tag
+#    Fetch
 #    Submodules
 #      Info
 #      Management
@@ -131,6 +132,11 @@
 	tl = tag -n10
 	tl-version = tag -n10 --sort version:refname
 	tl-date = tag --sort=-creatordate
+
+# ** Fetch
+[alias]
+	# 'fr' - Fetch Rebase('Pull Rebase' name is used in 'git-extars' tools: see at 'git-pr')
+	fr = pull --rebase
 
 # ** Submodules
 # *** Info
