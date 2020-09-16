@@ -28,6 +28,7 @@
 #  Credential
 #  Git-plus
 #  Git-extras
+#    Alias
 
 # * Profile
 [user]
@@ -221,3 +222,8 @@
 [git-extras "info"]
 	config-grep = git config --list | grep --color=never -E \"^user.name|^user.email\"
 	log = git log --max-count=1 --format=\"Author: %an%nDate:   %ad (%ar)%n%n    %s\" --date=format:\"%Y-%m-%d %a %H:%M\"
+
+# ** Alias
+[alias]
+	# Info Short
+	is = info -c --no-config
