@@ -220,7 +220,9 @@
 
 # * Git-extras
 [git-extras "info"]
+	# show user's name and email
 	config-grep = git config --list | grep --color=never -E \"^user.name|^user.email\"
+	# show last commit subject, without sha1
 	log = git log --max-count=1 --format=\"Author: %an%nDate:   %ad (%ar)%n%n    %s\" --date=format:\"%Y-%m-%d %a %H:%M\"
 
 # ** Alias
