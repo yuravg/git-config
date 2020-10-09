@@ -65,6 +65,8 @@
 	ss = status -s
 	sb = status -s --branch
 	si = status -s --ignored
+	# Status Full: status project and its submodules
+	sf = "!git ss && git sm-info && git sm-status"
 
 # ** Commit
 [alias]
