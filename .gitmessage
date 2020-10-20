@@ -1,7 +1,7 @@
 
 
 # Subject line should always be able to complete the following sentence:
-# If applied, this commit will... (subject line)
+# If applied, this commit will... (subject line)  |                     |
 #
 # Longer description should answer:
 # * Why was this change necessary?
