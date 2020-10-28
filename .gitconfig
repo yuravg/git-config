@@ -147,6 +147,7 @@
 [alias]
 	sm-info = !"git submodule status --recursive | sed 's/\\([^abcdef0-9]\\{,2\\}\\)\\([abcdef0-9]\\{7\\}\\)\\([abcdef0-9]\\{33\\}\\)\\(.*\\)/\\1\\2\\4/'"
 	sm-status = submodule foreach --recursive 'git status --short'
+	sm-is="!git sm-info && git sm-status"
 	sm-diff = submodule foreach --recursive 'git diff'
 
 # *** Management
