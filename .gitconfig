@@ -66,7 +66,7 @@
 	sb = status -s --branch
 	si = status -s --ignored
 	# Status Full: status project and its submodules
-	sf = "!git ss && git sm-info && git sm-status"
+	sf = "!git ss && git sm-info && git sm-state"
 
 # ** Commit
 [alias]
@@ -146,15 +146,15 @@
 # *** Info
 [alias]
 	sm-info = !"git submodule status --recursive | sed 's/\\([^abcdef0-9]\\{,2\\}\\)\\([abcdef0-9]\\{7\\}\\)\\([abcdef0-9]\\{33\\}\\)\\(.*\\)/\\1\\2\\4/'"
-	sm-status = submodule foreach --recursive 'git status --short'
-	sm-is="!git sm-info && git sm-status"
+	sm-state = submodule foreach --recursive 'git status --short'
+	sm-is="!git sm-info && git sm-state"
 	sm-diff = submodule foreach --recursive 'git diff'
 	sm-summary = submodule summary --summary-limit 3
 
 # *** Management
 [alias]
 	sm-init = submodule init
-	sm-init-update = !"git submodule init && git submodule update --recursive && git sm-status"
+	sm-init-update = !"git submodule init && git submodule update --recursive && git sm-state"
 	sm-update = submodule update --recursive
 	sm-update-force = submodule update --recursive --force
 	sm-update-remote = submodule update --recursive --remote --merge
