@@ -149,6 +149,7 @@
 	sm-status = submodule foreach --recursive 'git status --short'
 	sm-is="!git sm-info && git sm-status"
 	sm-diff = submodule foreach --recursive 'git diff'
+	sm-summary = submodule summary --summary-limit 3
 
 # *** Management
 [alias]
