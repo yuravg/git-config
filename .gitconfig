@@ -147,9 +147,9 @@
 [alias]
 	sm-status = !"git submodule status --recursive | sed 's/\\([^abcdef0-9]\\{,2\\}\\)\\([abcdef0-9]\\{7\\}\\)\\([abcdef0-9]\\{33\\}\\)\\(.*\\)/\\1\\2\\4/'"
 	sm-state = submodule foreach --recursive 'git status --short'
-	sm-is="!git sm-status && git sm-state"
 	sm-diff = submodule foreach --recursive 'git diff'
 	sm-summary = submodule summary --summary-limit 3
+	sm-sf="!git sm-status && git sm-state && git sm-summary"
 
 # *** Management
 [alias]
