@@ -67,6 +67,8 @@
 	si = status -s --ignored
 	# Status Full: status project and its submodules
 	sf = "!f() { git ss ; if [[ -n $(git submodule status) ]]; then echo; git sm-sf; fi }; f"
+	# https://github.com/yuravg/git-scripts/blob/master/bin/git-status-extra
+	se = status-extra -c
 
 # ** Commit
 [alias]
