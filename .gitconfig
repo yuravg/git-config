@@ -149,7 +149,7 @@
 	sm-state = submodule foreach --recursive 'git status --short'
 	sm-diff = submodule foreach --recursive 'git diff'
 	sm-summary = submodule summary --summary-limit 3
-	sm-sf="!git sm-status && git sm-state && git sm-summary"
+	sm-sf="!git sm-status && echo && git sm-summary && git sm-state"
 
 # *** Management
 [alias]
