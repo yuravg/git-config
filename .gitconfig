@@ -118,6 +118,7 @@
 	last = log -1 HEAD --stat --date=format:'%Y-%m-%d %a %H:%M'
 	last-patch = log -1 HEAD --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	lo = log --oneline --decorate --graph
+	ll = "!f() { git log --oneline --decorate --graph -n 10; echo "..."; }; f"
 	la = log --oneline --decorate --graph --all
 	lp = log --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	ls = log --stat --date=format:'%Y-%m-%d %a %H:%M'
