@@ -101,6 +101,7 @@
 	ds = diff --staged --color-words
 	ds0 = diff --staged --color-words -U0
 	dh = diff HEAD --color-words
+	diff-word = diff --word-diff
 	w = difftool
 	s = difftool --staged
 	h = difftool HEAD
