@@ -127,7 +127,9 @@
 	los = log --oneline --decorate --graph --stat
 	lan = log --oneline --decorate --graph --name-status --all
 	las = log --oneline --decorate --graph --stat --all
-	lt = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset'
+	lt  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset'
+	ltb = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset %n%b'
+	lb = ltb
 	lta = lt --all
 	sh = show --color-words --date=format:'%Y-%m-%d %a %H:%M'
 	shw = show --word-diff --date=format:'%Y-%m-%d %a %H:%M'
