@@ -1,5 +1,27 @@
-* git-config
-Git "global" configuration file
+#+title: Git configuration files
+#+author: Yuriy Gritsenko
+#+link: https://github.com/yuravg/git-config
+
+=git-config= - my Git configuration files.
+
+* Contents
+
+|-------------------+----------------------------------------------|
+| File              | Description                                  |
+|-------------------+----------------------------------------------|
+| [[file:.gitconfig][.gitconfig]]        | Git global configuration file                |
+| [[file:.gitconfig_path][.gitconfig_path]]   | Git path dependent configuration file        |
+| [[file:.gitignore_global][.gitignore_global]] | Git global ignore list                       |
+| [[file:.gitmessage][.gitmessage]]       | Commit template                              |
+|-------------------+----------------------------------------------|
+
+Installation scripts(make links):
+- [[file:install.sh][install.sh]] - Installation script (Shell, Linux OS)
+- [[file:install.ps1][install.ps1]]-  Installation script (PowerShell, Windows OS)
+
+* Installation
+- Download =git-config=: =git clone https://github.com/yuravg/git-config= or [[https://github.com/yuravg/git-config/archive/master.zip][zip-file]]
+- Copy configuration file to your Home ($HOME) directory or use install script to create symbolic links.
 
 * Links
 https://github.com/fniessen/git-leuven.git - Git configuration, aliases and extra commands
