@@ -4,8 +4,8 @@
 
 FNAME=".gitconfig_extra"
 
-HEADER="# NOTE: this file was auto-generated, do not modify!"
-
+HEADER="# Extra git-configuration file.
+# NOTE: this file was auto-generated, do not modify!"
 
 UNIX_OS_TXT="$HEADER
 
@@ -32,8 +32,6 @@ echo "$TXT"
 echo ""
 TMP_FNAME="${FNAME}_tmp"
 echo "$TXT" > "$TMP_FNAME"
-
-TARGET_FNAME="$HOME/$FNAME"
 
 cp -iv "$TMP_FNAME" "$HOME/$FNAME"
 rm -rf "$TMP_FNAME"
