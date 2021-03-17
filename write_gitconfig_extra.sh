@@ -11,6 +11,10 @@ UNIX_OS_TXT="$HEADER
 
 [web]
     browser = firefox
+
+# 1 - 60sec; 36000 - 10 hours
+[credential]
+	helper = cache --timeout=36000
 "
 
 WINDOWS_OS_TXT="$HEADER
