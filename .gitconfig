@@ -126,9 +126,15 @@
 	los = log --oneline --decorate --graph --stat
 	lan = log --oneline --decorate --graph --name-status --all
 	las = log --oneline --decorate --graph --stat --all
-	lt  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset'
-	ltb = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(cyan)(%cr)%Creset %C(bold cyan)<%an>%Creset %n%b'
+	# committer date, relative
+	lt   = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an>'
+	# committer date, relative, and body
+	ltb  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an> %n%b'
 	lb = ltb
+	# committer date, ISO 8601-like format
+	lti  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%ci|%Creset <%an>'
+	# committer date, short format (YYYY-MM-DD)
+	lts  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cs|%Creset <%an>'
 	lta = lt --all
 	sh = show --color-words --date=format:'%Y-%m-%d %a %H:%M'
 	shw = show --word-diff --date=format:'%Y-%m-%d %a %H:%M'
