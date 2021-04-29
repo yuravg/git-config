@@ -129,6 +129,7 @@
 	las = log --oneline --decorate --graph --stat --all
 	# committer date, relative
 	lt   = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an>'
+	lt-nog = log --decorate       --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an>'
 	# committer date, relative, and body
 	ltb  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an> %n%b'
 	lb = ltb
