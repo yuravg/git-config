@@ -168,7 +168,7 @@
 # *** Management
 [alias]
 	sm-init = submodule init
-	sm-init-update = !"git submodule init && git submodule update --recursive && git sm-state"
+	sm-init-update = !"git submodule init && git submodule update --init --recursive && git sm-state"
 	sm-update = submodule update --recursive
 	sm-update-force = submodule update --recursive --force
 	sm-update-remote = submodule update --recursive --remote --merge
