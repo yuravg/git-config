@@ -131,15 +131,19 @@
 	los = log --oneline --decorate --graph --stat
 	lan = log --oneline --decorate --graph --name-status --all
 	las = log --oneline --decorate --graph --stat --all
-	# committer date, relative
+	# Log with date(Time) and relative commiter date; commit subject and time formatted
 	lt     = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset%<|(70,trunc) %s %C(green)%<(12,trunc)|%cr|%Creset <%an>'
-	lt-nog = log --decorate         --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset%<|(70,trunc) %s %C(green)%<(12,trunc)|%cr|%Creset <%an>'
-	# committer date, relative, and body
+	# Log with date(Time) and relative commiter date; Unformatted
+	ltu    = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an>'
+	# 'lt' and 'ltu' aliases with Disable Graphic
+	lt-dg  = log --decorate --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset%<|(70,trunc) %s %C(green)%<(12,trunc)|%cr|%Creset <%an>'
+	ltu-dg = log --decorate --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an>'
+	# Log with committer relative date(Time), and commit Body
 	ltb  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cr|%Creset <%an> %n%b'
 	lb = ltb
-	# committer date, ISO 8601-like format
+	# Log with ISO 8601-like committer date(Time) format
 	lti  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%ci|%Creset <%an>'
-	# committer date, short format (YYYY-MM-DD)
+	# Log with Short date(Time) format(YYYY-MM-DD)
 	lts  = log --decorate --graph --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset %s %C(green)|%cs|%Creset <%an>'
 	lta = lt --all
 	sh = show --color-words --date=format:'%Y-%m-%d %a %H:%M'
