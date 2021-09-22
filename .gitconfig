@@ -119,6 +119,8 @@
 	last-patch = log -1 HEAD --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	lg = log --oneline
 	lo = log --oneline --decorate --graph
+	# Log oneline, Disable Graphic
+	lo-dg = log --oneline --decorate
 	l = "!f() { git log --oneline --decorate --graph -n 10 $@; echo "..."; }; f"
 	la = log --oneline --decorate --graph --all
 	lp = log --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
