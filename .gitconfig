@@ -101,15 +101,15 @@
 	ds0 = diff --staged --color-words -U0
 	dh = diff HEAD --color-words
 	diff-word = diff --word-diff
-	w = difftool
-	s = difftool --staged
-	h = difftool HEAD
-	wp = difftool --tool=p4merge
-	sp = difftool --staged --tool=p4merge
-	hp = difftool HEAD --tool=p4merge
-	wm = difftool --tool=meld
-	sm = difftool --staged --tool=meld
-	hm = difftool HEAD --tool=meld
+	dt-w = difftool
+	dt-s = difftool --staged
+	dt-h = difftool HEAD
+	dt-w-p = difftool --tool=p4merge
+	dt-s-p = difftool --staged --tool=p4merge
+	dt-h-p = difftool HEAD --tool=p4merge
+	dt-w-m = difftool --tool=meld
+	dt-s-m = difftool --staged --tool=meld
+	dt-h-m = difftool HEAD --tool=meld
 	mt = mergetool
 	diffall = "!git difftool --dir-diff"
 
