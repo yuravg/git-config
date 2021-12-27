@@ -6,13 +6,17 @@
 #
 # For Windows:
 # [includeIf "gitdir:C:/projects/"]
-# 	path = .gitconfig_CONFIG4WINOWS_NAME
+# 	path = .gitconfig_CONFIG4WINDOWS_NAME
+#
+# For Windows(WSL):
+# [includeIf "gitdir:mnt/c/projects/"]
+# 	path = .gitconfig_CONFIG4WINDOWS_NAME
 #
 # For Linux:
-# [includeIf "gitdir:/home/USERNAME/projects/"]
+# [includeIf "gitdir:~/projects/"]
 # 	path = .gitconfig_CONFIG4LINUX_NAME
 #
-# Example of '~/.gitconfig_CONFIG4WINOWS_NAME':
+# Example of '~/.gitconfig_CONFIG4WINDOWS_NAME':
 # [user]
 # 	name = USER_NAME
 # 	email = email
