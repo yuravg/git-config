@@ -1,0 +1,43 @@
+# -*- mode: gitattributes -*-
+
+#
+# Git attributes file
+
+
+# Contents:
+#
+#  Target
+#  Introduction
+#  Configuration
+#    Identifying Binary Files
+#    Images, exif(exiftool)
+#    Binary text, word(docx2txt)
+
+
+# * Target
+#
+# This is Git attribute file and a template file.
+# This file may used as template for other projects.
+
+# * Introduction
+#
+# https://git-scm.com/book/en/v2/Customizing-Git-Git-Attributes
+#
+# Git Attributes Some of these settings can also be specified for a path, so that Git applies
+# those settings only for a subdirectory or subset of files. These path-specific settings are
+# called Git attributes and are set either in a .gitattributes file in one of your directories
+# (normally the root of your project) or in the .git/info/attributes file if you don’t want the
+# attributes file committed with your project.
+
+# * Configuration
+
+# ** Identifying Binary Files
+*.pbxproj binary
+*.stp binary
+
+# ** Images, exif(exiftool)
+*.png diff=exif
+*.svg diff=exif
+
+# ** Binary text, word(docx2txt)
+*.docx diff=word

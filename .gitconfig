@@ -43,6 +43,7 @@
 	editor = vim
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
+	attributesfile = ~/.gitattributes_global
 
 # * Include
 [include]
