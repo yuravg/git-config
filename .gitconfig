@@ -25,6 +25,7 @@
 #  Coding
 #  Color
 #  Tools
+#    Diff tools
 #  Git-plus
 #  Git-extras
 #    Alias
@@ -233,8 +234,12 @@
 	guitool = kdiff3
 	submodule = log
 
+# ** Diff tools
 [diff "exif"]
 	textconv = exiftool
+
+[diff "word"]
+	textconv = docx2txt
 
 # * Git-plus
 # https://github.com/tkrajina/git-plus
