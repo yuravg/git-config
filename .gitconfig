@@ -156,7 +156,9 @@
 [alias]
 	tl = tag -n10
 	tl-version = tag -n10 --sort version:refname
-	tl-date = tag --sort=-creatordate
+	tl-short-version = tag --sort version:refname
+	tl-date = tag -n10 --sort=-creatordate
+	tl-short-date = tag --sort=-creatordate
 
 # ** Fetch
 [alias]
