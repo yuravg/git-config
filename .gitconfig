@@ -107,6 +107,11 @@
 	ds0 = diff --staged --color-words -U0
 	dh = diff HEAD --color-words
 	diff-word = diff --word-diff
+	# TIPS:
+	# git difftool|dt|dtp|dpm <hash_or_branch_name>[~Number]^!
+	dt = difftool
+	dtp = difftool --tool=p4merge
+	dtm = difftool --tool=meld
 	dt-w = difftool
 	dt-s = difftool --staged
 	dt-h = difftool HEAD
