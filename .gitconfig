@@ -194,11 +194,20 @@
 
 # ** Tag
 [alias]
-	tl = tag -n10
-	tl-version = tag -n10 --sort version:refname
-	tl-short-version = tag --sort version:refname
-	tl-date = tag -n10 --sort=-creatordate
-	tl-short-date = tag --sort=-creatordate
+	# TIPS:
+	# Search by tags:
+	#  $ git tag|<tag-alieas> -l "*mask*"
+	tl-name         = tag
+	tl-name-version = tag --sort=-version:refname
+	tl-name-date    = tag --sort=-creatordate
+
+	tl-subject         = tag -n1
+	tl-subject-version = tag -n1 --sort=-version:refname
+	tl-subject-date    = tag -n1 --sort=-creatordate
+
+	tl-body         = tag -n10
+	tl-body-version = tag -n10 --sort=-version:refname
+	tl-body-date    = tag -n10 --sort=-creatordate
 
 # ** Fetch
 [alias]
