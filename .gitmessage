@@ -3,9 +3,12 @@
 # Subject line should always be able to complete the following sentence:
 # If applied, this commit will... (subject line)  |                     |
 #
-# Longer description should answer:
-# * Why was this change necessary?
-# * How does this change address the issue? (implementation, etc.?)
-# * Are there any side effects?
-# Include a link to the ticket, if any:
-# Resolves: #123; See also: #456, #789
+# More detailed explanatory text, if necessary.
+#
+# Explain the problem that this commit is solving. Focus on why you are
+# making this change as opposed to how.
+# Are there side effects?
+#
+# If you use an issue tracker, put references to them:
+# Resolves: #123;
+# See also: #456, #789
