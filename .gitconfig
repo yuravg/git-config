@@ -3,7 +3,6 @@
 #
 #  Profile
 #  Core
-#  Include
 #  Commit
 #  Push
 #  Alias
@@ -33,6 +32,7 @@
 #  Git-plus
 #  Git-extras
 #    Alias
+#  Include
 
 # * Profile
 [user]
@@ -48,11 +48,6 @@
 	excludesfile = ~/.gitignore_global
 	autocrlf = input
 	attributesfile = ~/.gitattributes_global
-
-# * Include
-[include]
-	path = ~/.gitconfig_extra
-	path = ~/.gitconfig_path
 
 # * Commit
 [commit]
@@ -305,3 +300,8 @@
 [alias]
 	# Info Short
 	is = info -c --no-config
+
+# * Include
+[include]
+	path = ~/.gitconfig_extra
+	path = ~/.gitconfig_path
