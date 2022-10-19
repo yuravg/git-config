@@ -130,6 +130,7 @@
 	# Log one line, Format subject(used only significant 70 chars of subject)
 	lo-f = log --pretty=format:'%C(yellow)%h%Creset%C(bold red)%d%Creset%<|(80,trunc) %s'
 	l = "!f() { git log --oneline --decorate --graph -n 10 $@; echo "..."; }; f"
+	L = "!f() { git log --all --oneline --decorate --graph -n 10 $@; echo "..."; }; f"
 	la = log --oneline --decorate --graph --all
 	lp = log --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
 	ls = log --stat --date=format:'%Y-%m-%d %a %H:%M'
