@@ -164,12 +164,12 @@
 	# https://github.com/fniessen/git-leuven
 	search-for-files = !git ls-tree -r --name-only HEAD | grep -i --color=auto
 	find-files = !git search-for-files
-    search-for-files-all = "!f() { \
-            for BRANCH in $(git for-each-ref --format=\"%(refname)\" refs/heads); do \
-                printf \"\n$(tput bold)$BRANCH:$(tput sgr0)\n\"; \
-                git ls-tree -r --name-only $BRANCH | nl -bn -w3 | grep --color=auto \"$1\"; \
-            done; \
-        }; f"
+	search-for-files-all = "!f() { \
+			for BRANCH in $(git for-each-ref --format=\"%(refname)\" refs/heads); do \
+				printf \"\n$(tput bold)$BRANCH:$(tput sgr0)\n\"; \
+				git ls-tree -r --name-only $BRANCH | nl -bn -w3 | grep --color=auto \"$1\"; \
+			done; \
+		}; f"
 	find-files-all = !git search-for-files-all
 
 # *** Code
