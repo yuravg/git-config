@@ -15,6 +15,7 @@
 #    Log
 #    Search
 #      Files
+#      Commits
 #      Code
 #      Grep
 #    Tag
@@ -171,6 +172,9 @@
 			done; \
 		}; f"
 	find-files-all = !git search-for-files-all
+
+# *** Commits
+	search-for-commits = "log --decorate -i --all --date=short --grep"
 
 # *** Code
 	search-for-code = "grep -i -I --line-number --break --heading -C 1"
