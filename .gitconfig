@@ -164,17 +164,16 @@
 # *** Files
 	# https://github.com/fniessen/git-leuven
 	search-for-files = !git ls-tree -r --name-only HEAD | grep -i --color=auto
-	find-files = !git search-for-files
 	search-for-files-all = "!f() { \
 			for BRANCH in $(git for-each-ref --format=\"%(refname)\" refs/heads); do \
 				printf \"\n$(tput bold)$BRANCH:$(tput sgr0)\n\"; \
 				git ls-tree -r --name-only $BRANCH | nl -bn -w3 | grep --color=auto \"$1\"; \
 			done; \
 		}; f"
-	find-files-all = !git search-for-files-all
 
 # *** Commits
 	search-for-commits = "log --decorate -i --all --date=short --grep"
+	search-for-commits-all-branches = "log -a --decorate -i --all --date=short --grep"
 
 # *** Code
 	search-for-code = "grep -i -I --line-number --break --heading -C 1"
@@ -182,14 +181,21 @@
 
 # *** Grep
 	# TIPS:
-	# - i  -- ignore case
-	# -C 1 -- context
+	# -i  -- ignore case
+	# -I  -- Don't match the pattern in binary files.
+	# -C 1 -- context ([-A <post-context>] [-B <pre-context>])
 	# --all-match
+	# -f  -- file
+	# -c  -- count
+	# -l  --files-with-matches
+    # -L  --files-without-match]
 	# -e REGEXRP; may used with: --and --or --not
 	# '--' -- Signals the end of options; the rest of the parameters are <pathspec> limiters.
 	#      Examples:
 	#          -- '*.[ch]';
 	#          -- :^Documentation
+	#
+	# See 'git grep --help' for more help
 	gr = grep -I --break --line-number --heading
 
 # ** Tag
