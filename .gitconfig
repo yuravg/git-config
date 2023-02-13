@@ -14,10 +14,12 @@
 #    Diff, difftool
 #    Log
 #    Search
-#      Files
-#      Commits
-#      Code
-#      Grep
+#      Search git-repo file names
+#      Search in git-repo files
+#        Code
+#        Personal-grep
+#      Search in git-log messages ("--grep")
+#      Search in git-log patches "-S,-G"
 #    Tag
 #    Fetch
 #    Submodules
@@ -161,7 +163,8 @@
 	week = "!git lo --since=1.weeks --author=\"$(git config user.name)\" --all"
 
 # ** Search
-# *** Files
+
+# *** Search git-repo file names
 	# https://github.com/fniessen/git-leuven
 	search-for-files = !git ls-tree -r --name-only HEAD | grep -i --color=auto
 	search-for-files-all = "!f() { \
@@ -171,15 +174,12 @@
 			done; \
 		}; f"
 
-# *** Commits
-	search-for-commits = "log --decorate -i --all --date=short --grep"
-	search-for-commits-all-branches = "log -a --decorate -i --all --date=short --grep"
+# *** Search in git-repo files
 
-# *** Code
+# **** Code
 	search-for-code = "grep -i -I --line-number --break --heading -C 1"
-	ack = !git search-for-code
 
-# *** Grep
+# **** Personal-grep
 	# TIPS:
 	# -i  -- ignore case
 	# -I  -- Don't match the pattern in binary files.
@@ -197,6 +197,21 @@
 	#
 	# See 'git grep --help' for more help
 	gr = grep -I --break --line-number --heading
+
+# *** Search in git-log messages ("--grep")
+	search-for-commits = "log --decorate -i --all --date=short --grep"
+	search-for-commits-all-branches = "log -a --decorate -i --all --date=short --grep"
+
+# *** Search in git-log patches "-S,-G"
+	# TIPS:
+	# -p  -- show a patch
+	# --stat -- generate a diffstat
+	# --name-status
+	# --compact-summary
+	# See 'git log --help' for more help
+	search-for-patch = "log --oneline -G"
+	# Look for differences that change the number of occurrences of the specified string
+	search-for-patch-change = "log --oneline -S"
 
 # ** Tag
 [alias]
