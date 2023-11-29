@@ -126,6 +126,7 @@
 [alias]
 	last = log -1 HEAD --stat --date=format:'%Y-%m-%d %a %H:%M'
 	last-patch = log -1 HEAD --patch-with-stat --date=format:'%Y-%m-%d %a %H:%M'
+	last-release-info = log -1 HEAD --date=format:'%y%m.%d%H' --pretty=format:'%ad %h\n'
 	lg = log --oneline
 	lo = log --oneline --decorate --graph
 	# Log oneline, Disable Graphic
