@@ -105,6 +105,9 @@
 	ds0 = diff --staged --color-words -U0
 	dh = diff HEAD --color-words
 	diff-word = diff --word-diff
+	diff-word-ignore-ws = diff --ignore-all-space
+	diff-with-submodules = diff --submodule=diff
+	dws = diff-with-submodules
 	# TIPS:
 	# git difftool|dt|dtp|dpm <hash_or_branch_name>[~Number]^!
 	dt = difftool
@@ -120,7 +123,7 @@
 	dt-s-m = difftool --staged --tool=meld
 	dt-h-m = difftool HEAD --tool=meld
 	mt = mergetool
-	diffall = "!git difftool --dir-diff"
+	patch = log --patch-with-stat  -1 --date=format:'%Y-%m-%d %a %H:%M'
 
 # ** Log
 [alias]
@@ -242,6 +245,8 @@
 	sm-status = !"git submodule status --recursive | sed 's/\\([^abcdef0-9]\\{,2\\}\\)\\([abcdef0-9]\\{7\\}\\)\\([abcdef0-9]\\{33\\}\\)\\(.*\\)/\\1\\2\\4/'"
 	sm-state = submodule foreach --recursive 'git status --short'
 	sm-diff = submodule foreach --recursive 'git diff'
+	sm-diff-ignore-ws = submodule foreach --recursive 'git diff --ignore-all-space'
+	sm-diff-stat = submodule foreach --recursive 'git status --short'
 	sm-remote = submodule foreach --recursive 'git remote -v'
 	sm-summary = submodule summary --summary-limit 3
 	sm-sf="!git sm-status && echo && git sm-summary && git sm-state"
