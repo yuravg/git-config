@@ -203,8 +203,8 @@
 	gr = grep -I --break --line-number --heading
 
 # *** Search in git-log messages ("--grep")
-	search-for-commits = "log --decorate -i --all --date=short --grep"
-	search-for-commits-all-branches = "log -a --decorate -i --all --date=short --grep"
+	search-for-commits = "log --decorate -i --date=short --grep"
+	search-for-commits-all-branches = "log --decorate -i --all --date=short --grep"
 
 # *** Search in git-log patches "-S,-G"
 	# TIPS:
